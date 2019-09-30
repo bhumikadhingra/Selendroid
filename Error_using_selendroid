@@ -1,0 +1,656 @@
+Microsoft Windows [Version 10.0.18362.356]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+F:\Guru99\testappatg\src\testappatg>cd\\
+'\\'
+CMD does not support UNC paths as current directories.
+
+F:\Guru99\testappatg\src\testappatg>cd\
+
+F:\>cd Guru99
+
+F:\Guru99>java -jar selendroid-standalone-0.17.0-with-dependencies_fixed.jar -app atgworldapk451.apk
+Sep 30, 2019 1:57:25 PM io.selendroid.standalone.SelendroidLauncher main
+INFO: ################# Selendroid #################
+Sep 30, 2019 1:57:25 PM io.selendroid.standalone.SelendroidLauncher main
+INFO: ################# Configuration in use #################
+Sep 30, 2019 1:57:25 PM io.selendroid.standalone.SelendroidLauncher main
+INFO: io.selendroid.standalone.SelendroidConfiguration@f2a0b8e[
+  port=4444
+  timeoutEmulatorStart=300000
+  supportedApps=[atgworldapk451.apk]
+  verbose=false
+  emulatorPort=5560
+  deviceScreenshot=false
+  selendroidServerPort=8080
+  keystore=<null>
+  keystorePassword=<null>
+  keystoreAlias=<null>
+  emulatorOptions=<null>
+  keepEmulator=false
+  registrationUrl=<null>
+  proxy=<null>
+  serverHost=<null>
+  keepAdbAlive=false
+  maxSession=5
+  maxInstances=5
+  registerCycle=0
+  noWebViewApp=false
+  noClearData=false
+  sessionTimeoutSeconds=1800
+  forceReinstall=false
+  logLevel=ERROR
+  deviceLog=true
+  serverStartTimeout=20000
+  printHelp=false
+  serverStartRetries=5
+  folder=<null>
+  deleteTmpFiles=true
+]
+Sep 30, 2019 1:57:25 PM io.selendroid.standalone.SelendroidLauncher launchServer
+INFO: Starting Selendroid standalone on port 4444
+Sep 30, 2019 1:57:25 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Executing shell command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove F:\Guru99\atgworldapk451.apk META-INF/MANIFEST.MF
+Sep 30, 2019 1:57:26 PM io.selendroid.standalone.io.ShellCommand exec
+SEVERE: Error executing command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove F:\Guru99\atgworldapk451.apk META-INF/MANIFEST.MF
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+        at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:377)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:160)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:147)
+        at io.selendroid.standalone.io.ShellCommand.exec(ShellCommand.java:49)
+        at io.selendroid.standalone.android.impl.DefaultAndroidApp.deleteFileFromWithinApk(DefaultAndroidApp.java:112)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.deleteFileFromAppSilently(SelendroidServerBuilder.java:133)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.resignApp(SelendroidServerBuilder.java:142)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.addToAppsStore(SelendroidStandaloneDriver.java:121)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.initApplicationsUnderTest(SelendroidStandaloneDriver.java:155)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.<init>(SelendroidStandaloneDriver.java:94)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.initializeSelendroidServer(SelendroidStandaloneServer.java:63)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.<init>(SelendroidStandaloneServer.java:52)
+        at io.selendroid.standalone.SelendroidLauncher.launchServer(SelendroidLauncher.java:65)
+        at io.selendroid.standalone.SelendroidLauncher.main(SelendroidLauncher.java:117)
+
+Sep 30, 2019 1:57:26 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Executing shell command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove F:\Guru99\atgworldapk451.apk META-INF/CERT.RSA
+Sep 30, 2019 1:57:26 PM io.selendroid.standalone.io.ShellCommand exec
+SEVERE: Error executing command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove F:\Guru99\atgworldapk451.apk META-INF/CERT.RSA
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+        at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:377)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:160)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:147)
+        at io.selendroid.standalone.io.ShellCommand.exec(ShellCommand.java:49)
+        at io.selendroid.standalone.android.impl.DefaultAndroidApp.deleteFileFromWithinApk(DefaultAndroidApp.java:112)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.deleteFileFromAppSilently(SelendroidServerBuilder.java:133)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.resignApp(SelendroidServerBuilder.java:143)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.addToAppsStore(SelendroidStandaloneDriver.java:121)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.initApplicationsUnderTest(SelendroidStandaloneDriver.java:155)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.<init>(SelendroidStandaloneDriver.java:94)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.initializeSelendroidServer(SelendroidStandaloneServer.java:63)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.<init>(SelendroidStandaloneServer.java:52)
+        at io.selendroid.standalone.SelendroidLauncher.launchServer(SelendroidLauncher.java:65)
+        at io.selendroid.standalone.SelendroidLauncher.main(SelendroidLauncher.java:117)
+
+Sep 30, 2019 1:57:26 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Executing shell command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove F:\Guru99\atgworldapk451.apk META-INF/CERT.SF
+Sep 30, 2019 1:57:26 PM io.selendroid.standalone.io.ShellCommand exec
+SEVERE: Error executing command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove F:\Guru99\atgworldapk451.apk META-INF/CERT.SF
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+        at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:377)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:160)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:147)
+        at io.selendroid.standalone.io.ShellCommand.exec(ShellCommand.java:49)
+        at io.selendroid.standalone.android.impl.DefaultAndroidApp.deleteFileFromWithinApk(DefaultAndroidApp.java:112)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.deleteFileFromAppSilently(SelendroidServerBuilder.java:133)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.resignApp(SelendroidServerBuilder.java:144)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.addToAppsStore(SelendroidStandaloneDriver.java:121)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.initApplicationsUnderTest(SelendroidStandaloneDriver.java:155)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.<init>(SelendroidStandaloneDriver.java:94)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.initializeSelendroidServer(SelendroidStandaloneServer.java:63)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.<init>(SelendroidStandaloneServer.java:52)
+        at io.selendroid.standalone.SelendroidLauncher.launchServer(SelendroidLauncher.java:65)
+        at io.selendroid.standalone.SelendroidLauncher.main(SelendroidLauncher.java:117)
+
+Sep 30, 2019 1:57:26 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Executing shell command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove F:\Guru99\atgworldapk451.apk META-INF/ANDROIDD.SF
+Sep 30, 2019 1:57:26 PM io.selendroid.standalone.io.ShellCommand exec
+SEVERE: Error executing command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove F:\Guru99\atgworldapk451.apk META-INF/ANDROIDD.SF
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+        at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:377)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:160)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:147)
+        at io.selendroid.standalone.io.ShellCommand.exec(ShellCommand.java:49)
+        at io.selendroid.standalone.android.impl.DefaultAndroidApp.deleteFileFromWithinApk(DefaultAndroidApp.java:112)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.deleteFileFromAppSilently(SelendroidServerBuilder.java:133)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.resignApp(SelendroidServerBuilder.java:145)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.addToAppsStore(SelendroidStandaloneDriver.java:121)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.initApplicationsUnderTest(SelendroidStandaloneDriver.java:155)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.<init>(SelendroidStandaloneDriver.java:94)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.initializeSelendroidServer(SelendroidStandaloneServer.java:63)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.<init>(SelendroidStandaloneServer.java:52)
+        at io.selendroid.standalone.SelendroidLauncher.launchServer(SelendroidLauncher.java:65)
+        at io.selendroid.standalone.SelendroidLauncher.main(SelendroidLauncher.java:117)
+
+Sep 30, 2019 1:57:26 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Executing shell command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove F:\Guru99\atgworldapk451.apk META-INF/ANDROIDD.RSA
+Sep 30, 2019 1:57:26 PM io.selendroid.standalone.io.ShellCommand exec
+SEVERE: Error executing command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove F:\Guru99\atgworldapk451.apk META-INF/ANDROIDD.RSA
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+        at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:377)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:160)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:147)
+        at io.selendroid.standalone.io.ShellCommand.exec(ShellCommand.java:49)
+        at io.selendroid.standalone.android.impl.DefaultAndroidApp.deleteFileFromWithinApk(DefaultAndroidApp.java:112)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.deleteFileFromAppSilently(SelendroidServerBuilder.java:133)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.resignApp(SelendroidServerBuilder.java:146)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.addToAppsStore(SelendroidStandaloneDriver.java:121)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.initApplicationsUnderTest(SelendroidStandaloneDriver.java:155)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.<init>(SelendroidStandaloneDriver.java:94)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.initializeSelendroidServer(SelendroidStandaloneServer.java:63)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.<init>(SelendroidStandaloneServer.java:52)
+        at io.selendroid.standalone.SelendroidLauncher.launchServer(SelendroidLauncher.java:65)
+        at io.selendroid.standalone.SelendroidLauncher.main(SelendroidLauncher.java:117)
+
+Sep 30, 2019 1:57:26 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Executing shell command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove F:\Guru99\atgworldapk451.apk META-INF/NDKEYSTO.SF
+Sep 30, 2019 1:57:27 PM io.selendroid.standalone.io.ShellCommand exec
+SEVERE: Error executing command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove F:\Guru99\atgworldapk451.apk META-INF/NDKEYSTO.SF
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+        at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:377)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:160)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:147)
+        at io.selendroid.standalone.io.ShellCommand.exec(ShellCommand.java:49)
+        at io.selendroid.standalone.android.impl.DefaultAndroidApp.deleteFileFromWithinApk(DefaultAndroidApp.java:112)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.deleteFileFromAppSilently(SelendroidServerBuilder.java:133)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.resignApp(SelendroidServerBuilder.java:147)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.addToAppsStore(SelendroidStandaloneDriver.java:121)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.initApplicationsUnderTest(SelendroidStandaloneDriver.java:155)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.<init>(SelendroidStandaloneDriver.java:94)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.initializeSelendroidServer(SelendroidStandaloneServer.java:63)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.<init>(SelendroidStandaloneServer.java:52)
+        at io.selendroid.standalone.SelendroidLauncher.launchServer(SelendroidLauncher.java:65)
+        at io.selendroid.standalone.SelendroidLauncher.main(SelendroidLauncher.java:117)
+
+Sep 30, 2019 1:57:27 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Executing shell command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove F:\Guru99\atgworldapk451.apk META-INF/NDKEYSTO.RSA
+Sep 30, 2019 1:57:27 PM io.selendroid.standalone.io.ShellCommand exec
+SEVERE: Error executing command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove F:\Guru99\atgworldapk451.apk META-INF/NDKEYSTO.RSA
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+        at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:377)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:160)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:147)
+        at io.selendroid.standalone.io.ShellCommand.exec(ShellCommand.java:49)
+        at io.selendroid.standalone.android.impl.DefaultAndroidApp.deleteFileFromWithinApk(DefaultAndroidApp.java:112)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.deleteFileFromAppSilently(SelendroidServerBuilder.java:133)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.resignApp(SelendroidServerBuilder.java:148)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.addToAppsStore(SelendroidStandaloneDriver.java:121)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.initApplicationsUnderTest(SelendroidStandaloneDriver.java:155)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.<init>(SelendroidStandaloneDriver.java:94)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.initializeSelendroidServer(SelendroidStandaloneServer.java:63)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.<init>(SelendroidStandaloneServer.java:52)
+        at io.selendroid.standalone.SelendroidLauncher.launchServer(SelendroidLauncher.java:65)
+        at io.selendroid.standalone.SelendroidLauncher.main(SelendroidLauncher.java:117)
+
+Sep 30, 2019 1:57:27 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Executing shell command: C:\Program Files\Java\jdk-13\bin\jarsigner.exe -sigalg MD5withRSA -digestalg SHA1 -signedjar F:\Guru99\resigned-atgworldapk451.apk -storepass android -keystore C:\Users\BHUMIKA\.android\debug.keystore F:\Guru99\atgworldapk451.apk androiddebugkey
+Sep 30, 2019 1:57:33 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Shell command output
+-->
+jar signed.
+
+Warning:
+The signer's certificate is self-signed.
+The MD5withRSA algorithm specified for the -sigalg option is considered a security risk.
+<--
+Sep 30, 2019 1:57:33 PM io.selendroid.standalone.builder.SelendroidServerBuilder signTestServer
+INFO: App signing output: jar signed.
+
+Warning:
+The signer's certificate is self-signed.
+The MD5withRSA algorithm specified for the -sigalg option is considered a security risk.
+Sep 30, 2019 1:57:33 PM io.selendroid.standalone.builder.SelendroidServerBuilder signTestServer
+INFO: The app has been signed: F:\Guru99\resigned-atgworldapk451.apk
+Sep 30, 2019 1:57:33 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Executing shell command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe dump badging F:\Guru99\resigned-atgworldapk451.apk
+Sep 30, 2019 1:57:33 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Shell command output
+-->
+package: name='com.ATG.World' versionCode='12' versionName='1.19' compileSdkVersion='29' compileSdkVersionCodename='10'
+sdkVersion:'21'
+targetSdkVersion:'29'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+uses-permission: name='android.permission.WRITE_EXTERNAL_STORAGE'
+uses-permission: name='android.permission.READ_EXTERNAL_STORAGE'
+uses-permission: name='android.permission.GET_ACCOUNTS'
+uses-permission: name='android.permission.READ_PROFILE'
+uses-permission: name='android.permission.READ_CONTACTS'
+uses-permission: name='android.permission.CAMERA'
+uses-permission: name='android.permission.ACCESS_FINE_LOCATION'
+uses-permission: name='android.permission.ACCESS_COARSE_LOCATION'
+uses-permission: name='android.permission.READ_LOGS'
+uses-permission: name='com.google.android.c2dm.permission.RECEIVE'
+uses-permission: name='android.permission.WAKE_LOCK'
+application-label:'ATG World'
+application-label-af:'ATG World'
+application-label-am:'ATG World'
+application-label-ar:'ATG World'
+application-label-as:'ATG World'
+application-label-az:'ATG World'
+application-label-be:'ATG World'
+application-label-bg:'ATG World'
+application-label-bn:'ATG World'
+application-label-bs:'ATG World'
+application-label-ca:'ATG World'
+application-label-cs:'ATG World'
+application-label-da:'ATG World'
+application-label-de:'ATG World'
+application-label-el:'ATG World'
+application-label-en-AU:'ATG World'
+application-label-en-CA:'ATG World'
+application-label-en-GB:'ATG World'
+application-label-en-IN:'ATG World'
+application-label-en-XC:'ATG World'
+application-label-es:'ATG World'
+application-label-es-ES:'ATG World'
+application-label-es-US:'ATG World'
+application-label-et:'ATG World'
+application-label-eu:'ATG World'
+application-label-fa:'ATG World'
+application-label-fi:'ATG World'
+application-label-fr:'ATG World'
+application-label-fr-CA:'ATG World'
+application-label-gl:'ATG World'
+application-label-gu:'ATG World'
+application-label-hi:'ATG World'
+application-label-hr:'ATG World'
+application-label-hu:'ATG World'
+application-label-hy:'ATG World'
+application-label-id:'ATG World'
+application-label-in:'ATG World'
+application-label-is:'ATG World'
+application-label-it:'ATG World'
+application-label-iw:'ATG World'
+application-label-ja:'ATG World'
+application-label-ka:'ATG World'
+application-label-kk:'ATG World'
+application-label-km:'ATG World'
+application-label-kn:'ATG World'
+application-label-ko:'ATG World'
+application-label-ky:'ATG World'
+application-label-lo:'ATG World'
+application-label-lt:'ATG World'
+application-label-lv:'ATG World'
+application-label-mk:'ATG World'
+application-label-ml:'ATG World'
+application-label-mn:'ATG World'
+application-label-mr:'ATG World'
+application-label-ms:'ATG World'
+application-label-my:'ATG World'
+application-label-nb:'ATG World'
+application-label-ne:'ATG World'
+application-label-nl:'ATG World'
+application-label-or:'ATG World'
+application-label-pa:'ATG World'
+application-label-pl:'ATG World'
+application-label-pt:'ATG World'
+application-label-pt-BR:'ATG World'
+application-label-pt-PT:'ATG World'
+application-label-ro:'ATG World'
+application-label-ru:'ATG World'
+application-label-si:'ATG World'
+application-label-sk:'ATG World'
+application-label-sl:'ATG World'
+application-label-sq:'ATG World'
+application-label-sr:'ATG World'
+application-label-sr-Latn:'ATG World'
+application-label-sv:'ATG World'
+application-label-sw:'ATG World'
+application-label-ta:'ATG World'
+application-label-te:'ATG World'
+application-label-th:'ATG World'
+application-label-tl:'ATG World'
+application-label-tr:'ATG World'
+application-label-uk:'ATG World'
+application-label-ur:'ATG World'
+application-label-uz:'ATG World'
+application-label-vi:'ATG World'
+application-label-zh:'ATG World'
+application-label-zh-CN:'ATG World'
+application-label-zh-HK:'ATG World'
+application-label-zh-TW:'ATG World'
+application-label-zu:'ATG World'
+application-icon-120:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-160:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-240:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-320:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-480:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-640:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-65534:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application: label='ATG World' icon='res/mipmap-anydpi-v26/ic_launcher.xml'
+application-debuggable
+launchable-activity: name='com.atg.world.activity.SplashActivity'  label='' icon=''
+uses-library-not-required:'org.apache.http.legacy'
+feature-group: label=''
+  uses-gl-es: '0x20000'
+  uses-feature: name='android.hardware.camera'
+  uses-implied-feature: name='android.hardware.camera' reason='requested android.permission.CAMERA permission'
+  uses-feature: name='android.hardware.faketouch'
+  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'
+  uses-feature: name='android.hardware.location'
+  uses-implied-feature: name='android.hardware.location' reason='requested android.permission.ACCESS_COARSE_LOCATION permission, and requested android.permission.ACCESS_FINE_LOCATION permission'
+  uses-feature: name='android.hardware.screen.portrait'
+  uses-implied-feature: name='android.hardware.screen.portrait' reason='one or more activities have specified a portrait orientation'
+main
+other-activities
+other-receivers
+other-services
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+supports-any-density: 'true'
+locales: '--_--' 'af' 'am' 'ar' 'as' 'az' 'be' 'bg' 'bn' 'bs' 'ca' 'cs' 'da' 'de' 'el' 'en-AU' 'en-CA' 'en-GB' 'en-IN' 'en-XC' 'es' 'es-ES' 'es-US' 'et' 'eu' 'fa' 'fi' 'fr' 'fr-CA' 'gl' 'gu' 'hi' 'hr' 'hu' 'hy' 'id' 'in' 'is' 'it' 'iw' 'ja' 'ka' 'kk' 'km' 'kn' 'ko' 'ky' 'lo' 'lt' 'lv' 'mk' 'ml' 'mn' 'mr' 'ms' 'my' 'nb' 'ne' 'nl' 'or' 'pa' 'pl' 'pt' 'pt-BR' 'pt-PT' 'ro' 'ru' 'si' 'sk' 'sl' 'sq' 'sr' 'sr-Latn' 'sv' 'sw' 'ta' 'te' 'th' 'tl' 'tr' 'uk' 'ur' 'uz' 'vi' 'zh' 'zh-CN' 'zh-HK' 'zh-TW' 'zu'
+densities: '120' '160' '240' '320' '480' '640' '65534'
+<--
+Sep 30, 2019 1:57:33 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Executing shell command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe dump badging F:\Guru99\resigned-atgworldapk451.apk
+Sep 30, 2019 1:57:33 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Shell command output
+-->
+package: name='com.ATG.World' versionCode='12' versionName='1.19' compileSdkVersion='29' compileSdkVersionCodename='10'
+sdkVersion:'21'
+targetSdkVersion:'29'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+uses-permission: name='android.permission.WRITE_EXTERNAL_STORAGE'
+uses-permission: name='android.permission.READ_EXTERNAL_STORAGE'
+uses-permission: name='android.permission.GET_ACCOUNTS'
+uses-permission: name='android.permission.READ_PROFILE'
+uses-permission: name='android.permission.READ_CONTACTS'
+uses-permission: name='android.permission.CAMERA'
+uses-permission: name='android.permission.ACCESS_FINE_LOCATION'
+uses-permission: name='android.permission.ACCESS_COARSE_LOCATION'
+uses-permission: name='android.permission.READ_LOGS'
+uses-permission: name='com.google.android.c2dm.permission.RECEIVE'
+uses-permission: name='android.permission.WAKE_LOCK'
+application-label:'ATG World'
+application-label-af:'ATG World'
+application-label-am:'ATG World'
+application-label-ar:'ATG World'
+application-label-as:'ATG World'
+application-label-az:'ATG World'
+application-label-be:'ATG World'
+application-label-bg:'ATG World'
+application-label-bn:'ATG World'
+application-label-bs:'ATG World'
+application-label-ca:'ATG World'
+application-label-cs:'ATG World'
+application-label-da:'ATG World'
+application-label-de:'ATG World'
+application-label-el:'ATG World'
+application-label-en-AU:'ATG World'
+application-label-en-CA:'ATG World'
+application-label-en-GB:'ATG World'
+application-label-en-IN:'ATG World'
+application-label-en-XC:'ATG World'
+application-label-es:'ATG World'
+application-label-es-ES:'ATG World'
+application-label-es-US:'ATG World'
+application-label-et:'ATG World'
+application-label-eu:'ATG World'
+application-label-fa:'ATG World'
+application-label-fi:'ATG World'
+application-label-fr:'ATG World'
+application-label-fr-CA:'ATG World'
+application-label-gl:'ATG World'
+application-label-gu:'ATG World'
+application-label-hi:'ATG World'
+application-label-hr:'ATG World'
+application-label-hu:'ATG World'
+application-label-hy:'ATG World'
+application-label-id:'ATG World'
+application-label-in:'ATG World'
+application-label-is:'ATG World'
+application-label-it:'ATG World'
+application-label-iw:'ATG World'
+application-label-ja:'ATG World'
+application-label-ka:'ATG World'
+application-label-kk:'ATG World'
+application-label-km:'ATG World'
+application-label-kn:'ATG World'
+application-label-ko:'ATG World'
+application-label-ky:'ATG World'
+application-label-lo:'ATG World'
+application-label-lt:'ATG World'
+application-label-lv:'ATG World'
+application-label-mk:'ATG World'
+application-label-ml:'ATG World'
+application-label-mn:'ATG World'
+application-label-mr:'ATG World'
+application-label-ms:'ATG World'
+application-label-my:'ATG World'
+application-label-nb:'ATG World'
+application-label-ne:'ATG World'
+application-label-nl:'ATG World'
+application-label-or:'ATG World'
+application-label-pa:'ATG World'
+application-label-pl:'ATG World'
+application-label-pt:'ATG World'
+application-label-pt-BR:'ATG World'
+application-label-pt-PT:'ATG World'
+application-label-ro:'ATG World'
+application-label-ru:'ATG World'
+application-label-si:'ATG World'
+application-label-sk:'ATG World'
+application-label-sl:'ATG World'
+application-label-sq:'ATG World'
+application-label-sr:'ATG World'
+application-label-sr-Latn:'ATG World'
+application-label-sv:'ATG World'
+application-label-sw:'ATG World'
+application-label-ta:'ATG World'
+application-label-te:'ATG World'
+application-label-th:'ATG World'
+application-label-tl:'ATG World'
+application-label-tr:'ATG World'
+application-label-uk:'ATG World'
+application-label-ur:'ATG World'
+application-label-uz:'ATG World'
+application-label-vi:'ATG World'
+application-label-zh:'ATG World'
+application-label-zh-CN:'ATG World'
+application-label-zh-HK:'ATG World'
+application-label-zh-TW:'ATG World'
+application-label-zu:'ATG World'
+application-icon-120:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-160:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-240:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-320:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-480:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-640:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-65534:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application: label='ATG World' icon='res/mipmap-anydpi-v26/ic_launcher.xml'
+application-debuggable
+launchable-activity: name='com.atg.world.activity.SplashActivity'  label='' icon=''
+uses-library-not-required:'org.apache.http.legacy'
+feature-group: label=''
+  uses-gl-es: '0x20000'
+  uses-feature: name='android.hardware.camera'
+  uses-implied-feature: name='android.hardware.camera' reason='requested android.permission.CAMERA permission'
+  uses-feature: name='android.hardware.faketouch'
+  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'
+  uses-feature: name='android.hardware.location'
+  uses-implied-feature: name='android.hardware.location' reason='requested android.permission.ACCESS_COARSE_LOCATION permission, and requested android.permission.ACCESS_FINE_LOCATION permission'
+  uses-feature: name='android.hardware.screen.portrait'
+  uses-implied-feature: name='android.hardware.screen.portrait' reason='one or more activities have specified a portrait orientation'
+main
+other-activities
+other-receivers
+other-services
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+supports-any-density: 'true'
+locales: '--_--' 'af' 'am' 'ar' 'as' 'az' 'be' 'bg' 'bn' 'bs' 'ca' 'cs' 'da' 'de' 'el' 'en-AU' 'en-CA' 'en-GB' 'en-IN' 'en-XC' 'es' 'es-ES' 'es-US' 'et' 'eu' 'fa' 'fi' 'fr' 'fr-CA' 'gl' 'gu' 'hi' 'hr' 'hu' 'hy' 'id' 'in' 'is' 'it' 'iw' 'ja' 'ka' 'kk' 'km' 'kn' 'ko' 'ky' 'lo' 'lt' 'lv' 'mk' 'ml' 'mn' 'mr' 'ms' 'my' 'nb' 'ne' 'nl' 'or' 'pa' 'pl' 'pt' 'pt-BR' 'pt-PT' 'ro' 'ru' 'si' 'sk' 'sl' 'sq' 'sr' 'sr-Latn' 'sv' 'sw' 'ta' 'te' 'th' 'tl' 'tr' 'uk' 'ur' 'uz' 'vi' 'zh' 'zh-CN' 'zh-HK' 'zh-TW' 'zu'
+densities: '120' '160' '240' '320' '480' '640' '65534'
+<--
+Sep 30, 2019 1:57:33 PM io.selendroid.standalone.server.model.SelendroidStandaloneDriver addToAppsStore
+INFO: App com.ATG.World:1.19 has been added to selendroid standalone server.
+Sep 30, 2019 1:57:34 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Executing shell command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove C:\Users\BHUMIKA\AppData\Local\Temp\android-driver944850584967412450.apk META-INF/MANIFEST.MF
+Sep 30, 2019 1:57:34 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Shell command output
+-->
+
+<--
+Sep 30, 2019 1:57:34 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Executing shell command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove C:\Users\BHUMIKA\AppData\Local\Temp\android-driver944850584967412450.apk META-INF/CERT.RSA
+Sep 30, 2019 1:57:34 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Shell command output
+-->
+
+<--
+Sep 30, 2019 1:57:34 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Executing shell command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove C:\Users\BHUMIKA\AppData\Local\Temp\android-driver944850584967412450.apk META-INF/CERT.SF
+Sep 30, 2019 1:57:34 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Shell command output
+-->
+
+<--
+Sep 30, 2019 1:57:34 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Executing shell command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove C:\Users\BHUMIKA\AppData\Local\Temp\android-driver944850584967412450.apk META-INF/ANDROIDD.SF
+Sep 30, 2019 1:57:34 PM io.selendroid.standalone.io.ShellCommand exec
+SEVERE: Error executing command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove C:\Users\BHUMIKA\AppData\Local\Temp\android-driver944850584967412450.apk META-INF/ANDROIDD.SF
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+        at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:377)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:160)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:147)
+        at io.selendroid.standalone.io.ShellCommand.exec(ShellCommand.java:49)
+        at io.selendroid.standalone.android.impl.DefaultAndroidApp.deleteFileFromWithinApk(DefaultAndroidApp.java:112)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.deleteFileFromAppSilently(SelendroidServerBuilder.java:133)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.resignApp(SelendroidServerBuilder.java:145)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.initApplicationsUnderTest(SelendroidStandaloneDriver.java:172)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.<init>(SelendroidStandaloneDriver.java:94)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.initializeSelendroidServer(SelendroidStandaloneServer.java:63)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.<init>(SelendroidStandaloneServer.java:52)
+        at io.selendroid.standalone.SelendroidLauncher.launchServer(SelendroidLauncher.java:65)
+        at io.selendroid.standalone.SelendroidLauncher.main(SelendroidLauncher.java:117)
+
+Sep 30, 2019 1:57:34 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Executing shell command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove C:\Users\BHUMIKA\AppData\Local\Temp\android-driver944850584967412450.apk META-INF/ANDROIDD.RSA
+Sep 30, 2019 1:57:34 PM io.selendroid.standalone.io.ShellCommand exec
+SEVERE: Error executing command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove C:\Users\BHUMIKA\AppData\Local\Temp\android-driver944850584967412450.apk META-INF/ANDROIDD.RSA
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+        at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:377)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:160)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:147)
+        at io.selendroid.standalone.io.ShellCommand.exec(ShellCommand.java:49)
+        at io.selendroid.standalone.android.impl.DefaultAndroidApp.deleteFileFromWithinApk(DefaultAndroidApp.java:112)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.deleteFileFromAppSilently(SelendroidServerBuilder.java:133)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.resignApp(SelendroidServerBuilder.java:146)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.initApplicationsUnderTest(SelendroidStandaloneDriver.java:172)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.<init>(SelendroidStandaloneDriver.java:94)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.initializeSelendroidServer(SelendroidStandaloneServer.java:63)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.<init>(SelendroidStandaloneServer.java:52)
+        at io.selendroid.standalone.SelendroidLauncher.launchServer(SelendroidLauncher.java:65)
+        at io.selendroid.standalone.SelendroidLauncher.main(SelendroidLauncher.java:117)
+
+Sep 30, 2019 1:57:34 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Executing shell command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove C:\Users\BHUMIKA\AppData\Local\Temp\android-driver944850584967412450.apk META-INF/NDKEYSTO.SF
+Sep 30, 2019 1:57:34 PM io.selendroid.standalone.io.ShellCommand exec
+SEVERE: Error executing command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove C:\Users\BHUMIKA\AppData\Local\Temp\android-driver944850584967412450.apk META-INF/NDKEYSTO.SF
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+        at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:377)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:160)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:147)
+        at io.selendroid.standalone.io.ShellCommand.exec(ShellCommand.java:49)
+        at io.selendroid.standalone.android.impl.DefaultAndroidApp.deleteFileFromWithinApk(DefaultAndroidApp.java:112)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.deleteFileFromAppSilently(SelendroidServerBuilder.java:133)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.resignApp(SelendroidServerBuilder.java:147)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.initApplicationsUnderTest(SelendroidStandaloneDriver.java:172)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.<init>(SelendroidStandaloneDriver.java:94)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.initializeSelendroidServer(SelendroidStandaloneServer.java:63)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.<init>(SelendroidStandaloneServer.java:52)
+        at io.selendroid.standalone.SelendroidLauncher.launchServer(SelendroidLauncher.java:65)
+        at io.selendroid.standalone.SelendroidLauncher.main(SelendroidLauncher.java:117)
+
+Sep 30, 2019 1:57:34 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Executing shell command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove C:\Users\BHUMIKA\AppData\Local\Temp\android-driver944850584967412450.apk META-INF/NDKEYSTO.RSA
+Sep 30, 2019 1:57:34 PM io.selendroid.standalone.io.ShellCommand exec
+SEVERE: Error executing command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\build-tools\28.0.3\aapt.exe remove C:\Users\BHUMIKA\AppData\Local\Temp\android-driver944850584967412450.apk META-INF/NDKEYSTO.RSA
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+        at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:377)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:160)
+        at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:147)
+        at io.selendroid.standalone.io.ShellCommand.exec(ShellCommand.java:49)
+        at io.selendroid.standalone.android.impl.DefaultAndroidApp.deleteFileFromWithinApk(DefaultAndroidApp.java:112)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.deleteFileFromAppSilently(SelendroidServerBuilder.java:133)
+        at io.selendroid.standalone.builder.SelendroidServerBuilder.resignApp(SelendroidServerBuilder.java:148)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.initApplicationsUnderTest(SelendroidStandaloneDriver.java:172)
+        at io.selendroid.standalone.server.model.SelendroidStandaloneDriver.<init>(SelendroidStandaloneDriver.java:94)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.initializeSelendroidServer(SelendroidStandaloneServer.java:63)
+        at io.selendroid.standalone.server.SelendroidStandaloneServer.<init>(SelendroidStandaloneServer.java:52)
+        at io.selendroid.standalone.SelendroidLauncher.launchServer(SelendroidLauncher.java:65)
+        at io.selendroid.standalone.SelendroidLauncher.main(SelendroidLauncher.java:117)
+
+Sep 30, 2019 1:57:34 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Executing shell command: C:\Program Files\Java\jdk-13\bin\jarsigner.exe -sigalg MD5withRSA -digestalg SHA1 -signedjar C:\Users\BHUMIKA\AppData\Local\Temp\resigned-android-driver944850584967412450.apk -storepass android -keystore C:\Users\BHUMIKA\.android\debug.keystore C:\Users\BHUMIKA\AppData\Local\Temp\android-driver944850584967412450.apk androiddebugkey
+Sep 30, 2019 1:57:36 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Shell command output
+-->
+jar signed.
+
+Warning:
+The signer's certificate is self-signed.
+The MD5withRSA algorithm specified for the -sigalg option is considered a security risk.
+<--
+Sep 30, 2019 1:57:36 PM io.selendroid.standalone.builder.SelendroidServerBuilder signTestServer
+INFO: App signing output: jar signed.
+
+Warning:
+The signer's certificate is self-signed.
+The MD5withRSA algorithm specified for the -sigalg option is considered a security risk.
+Sep 30, 2019 1:57:36 PM io.selendroid.standalone.builder.SelendroidServerBuilder signTestServer
+INFO: The app has been signed: C:\Users\BHUMIKA\AppData\Local\Temp\resigned-android-driver944850584967412450.apk
+01:57:42 E/adb: * daemon not running; starting now at tcp:5037
+01:57:42 E/adb: * daemon started successfully
+Sep 30, 2019 1:57:44 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Executing shell command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\tools\android.bat list avd
+Sep 30, 2019 1:57:45 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Shell command output
+-->
+**************************************************************************
+The "android" command is deprecated.
+For manual SDK, AVD, and project management, please use Android Studio.
+For command-line tools, use tools\bin\sdkmanager.bat
+and tools\bin\avdmanager.bat
+**************************************************************************
+
+Invoking "C:\Users\BHUMIKA\AppData\Local\Android\Sdk\tools\bin\avdmanager" list avd
+
+Exception in thread "main" java.lang.NoClassDefFoundError: javax/xml/bind/annotation/XmlSchema
+        at com.android.repository.api.SchemaModule$SchemaModuleVersion.<init>(SchemaModule.java:156)
+        at com.android.repository.api.SchemaModule.<init>(SchemaModule.java:75)
+        at com.android.sdklib.repository.AndroidSdkHandler.<clinit>(AndroidSdkHandler.java:81)
+        at com.android.sdklib.tool.AvdManagerCli.run(AvdManagerCli.java:213)
+        at com.android.sdklib.tool.AvdManagerCli.main(AvdManagerCli.java:200)
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.annotation.XmlSchema
+        at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:604)
+        at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+        ... 5 more
+<--
+Sep 30, 2019 1:57:45 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Executing shell command: C:\Users\BHUMIKA\AppData\Local\Android\Sdk\platform-tools\adb.exe devices
+Sep 30, 2019 1:57:45 PM io.selendroid.standalone.io.ShellCommand exec
+INFO: Shell command output
+-->
+List of devices attached
+<--
+Sep 30, 2019 1:57:45 PM io.selendroid.standalone.server.model.DeviceStore addEmulators
+INFO: No emulators has been found.
+Sep 30, 2019 1:57:45 PM io.selendroid.standalone.server.model.DeviceStore initAndroidDevices
+WARNING: Warning: io.selendroid.server.common.exceptions.SelendroidException: No android virtual devices were found. Please start the android tool and create emulators and restart the selendroid-standalone or plugin an Android hardware device via USB.
+Sep 30, 2019 1:57:45 PM io.selendroid.standalone.server.SelendroidStandaloneServer start
+INFO: Selendroid standalone server has been started on port: 4444
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.PlatformDependent0 (file:/F:/Guru99/selendroid-standalone-0.17.0-with-dependencies_fixed.jar) to field java.nio.Buffer.address
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.PlatformDependent0
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Sep 30, 2019 1:57:45 PM io.netty.util.internal.PlatformDependent <clinit>
+INFO: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
